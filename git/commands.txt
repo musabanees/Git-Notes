@@ -11,6 +11,7 @@
 ** Ignore file in the current directory, then write /filename.log in gitignore file.
 ** ignore the folder in gitignore ->> write FolderName/
 ** sometimes you are working with very critical project and its prefer not to update the master branch, then create another branch
+** You can create different branches to maintain the different versions of files you are working, never modified the master branch straight. Let say you need to add the function in the master branch code, then create spearate branch work on it and if you feel like the other branch is the final version then merge to final branch.
 
 
 4) git commit -m "initial comment"
@@ -32,4 +33,15 @@ git checkout dummy.html  --> this will bring back the previous staged file.
 
 13) git status -s --> short status
 
-14) 
+14) git branch feature1 --> create new branch
+
+15) git checkout feature1 --> switch to the feature1 branch
+
+16) git merge feature1 --> merge to the final master branch.
+
+17) git branch -b feature2 --> new branch feature2 is created and 										switched at the same time.
+
+** Push to github **
+ -> git remote add origin https://github.com/musabanees/testingForGitLearn.git
+ -> git remote set-url origin git@github.com:musabanees/testingForGitLearn.git
+-> git push -u origin master
