@@ -1,0 +1,20 @@
+
+1) git init --> initialse the git
+2) ls -lart --> shows all the hidden files present in the folder.
+3) git status --> to see the status of files
+
+** Few Important Concepts **
+** Untracked --> git is not tracking the file
+** staging --> add file to the place where git start tracking the changes
+** Unmodified --> it means you have commit the file from staging area and git 				  took the snapshort of it.
+
+
+4) git commit -m "initial comment"
+5) git checkout <file name> --> this will bring back the last changed version 								of file.
+
+6) git log --> provide the logs of commits
+7) git diff --> compare file from staging area with working directory (unstaged 				files, on which you are working currently)
+8) git diff --staged <filename> --> this will compare file with the staging 									area with the last commit.
+9) git reset HEAD dummy.html
+git checkout dummy.html  --> this will bring back the previous staged file.
+							For example: if you staged the file, but you want the previous version now, use this command.
